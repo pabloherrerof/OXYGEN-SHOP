@@ -1,0 +1,628 @@
+body {
+  background-color: #E5E5E5;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  height: auto;
+  padding-right: 3rem;
+  width: 100%;
+  padding-left: 3rem;
+  position: fixed;
+  z-index: 10;
+}
+
+nav h2 {
+  font-family: "Raleway";
+  color: #08A6E4;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+nav a {
+  font-family: "Open Sans";
+  letter-spacing: 0.205rem;
+  font-style: normal;
+  color: #A5A5A5;
+  text-decoration: none;
+  font-size: 0.688rem;
+  width: auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  height: 100%;
+}
+
+nav a:hover {
+  color: black;
+  border-bottom: 4px solid #08A6E4;
+  outline-offset: 30px;
+  font-weight: bold;
+  top: 17px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+nav a:active {
+  color: black;
+  border-bottom: 4px solid coral;
+  outline-offset: 30px;
+  font-weight: bold;
+  top: 17px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#burguer-menu {
+  display: none;
+}
+
+#burguer-menu button {
+  border: none;
+}
+
+#burguer-menu button:hover {
+  border: none;
+  box-shadow: none;
+}
+
+#burguer-menu button:checked {
+  border: none;
+  box-shadow: none;
+  color: #07ACE6;
+}
+
+@media (max-width: 678px) {
+  #normal-menu {
+    display: none !important;
+  }
+  .nav-bar {
+    padding: 4%;
+  }
+  .nav-item {
+    list-style: none;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 3.28px;
+    text-transform: uppercase;
+    color: #A5A5A5;
+  }
+  #burguer-menu {
+    display: inline !important;
+  }
+}
+.seccion-1 {
+  padding-top: 15.5vh;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.seccion-1 .sell-more h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 57px;
+}
+
+.seccion-1 p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+.sell-more button {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 22px;
+  width: 27vw;
+  max-width: 440px;
+  min-width: 310px;
+  height: 67px;
+  color: #FFFFFF;
+  background-color: #08A6E4;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  border-radius: 40px;
+  border: 0;
+}
+
+.popular-sales {
+  margin-top: 22px;
+  margin-bottom: 122px;
+}
+
+.popular-sales h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+}
+
+.icons {
+  padding: 6vw 3vw;
+}
+
+.icons .popular-sales-img {
+  height: 130px;
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  .seccion-1 h2 {
+    padding-top: 15vh;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000000;
+  }
+  .seccion-1 button {
+    width: 82vw;
+    max-width: 310px;
+  }
+  .seccion-1 .fondo {
+    padding-top: 8vh;
+  }
+}
+.seccion-2 {
+  background-color: #F7F7F7;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  padding-left: 15vw !important;
+  padding-right: 15vw !important;
+}
+
+.seccion-2 .texto {
+  padding: 4%;
+}
+
+.seccion-2 h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+  padding-bottom: 10%;
+}
+
+.seccion-2 p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  padding-bottom: 10%;
+}
+
+.s2-card1 {
+  background: #FFFFFF;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  min-height: 370px;
+}
+
+.s2-card1 hr {
+  border: 1px solid #FB3B64;
+  opacity: 1;
+  width: 19vw;
+}
+
+.card1-imgs {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.card1-imgs .macbook-image {
+  z-index: 1;
+  position: absolute;
+  width: 23vw;
+  max-width: 380px;
+}
+
+.card1-imgs .cuadrado {
+  position: relative;
+  z-index: 0;
+  left: -50%;
+  transform: translate(22vw, -8vh);
+  width: 12vw;
+  max-width: 240px;
+  height: auto;
+  z-index: 0;
+  margin-top: 2vw;
+}
+
+.s2-card2 {
+  background: #FFFFFF;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  min-height: 370px;
+  height: auto;
+}
+
+.card2-imgs {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.card2-imgs .iphone {
+  width: 26vw;
+  max-width: 425px;
+  position: absolute;
+  z-index: 1;
+}
+
+.s2-card2 .circulo img {
+  width: 21vw;
+  max-width: 320px;
+  height: auto;
+  position: relative;
+  z-index: 0;
+  left: -40px;
+  bottom: 30px;
+  margin-top: 12px;
+}
+
+.s2-card2 hr {
+  border: 1px solid #08A6E4;
+  opacity: 1;
+  width: 19vw;
+}
+
+.s2-card3 {
+  height: auto;
+  min-height: 370px;
+}
+
+.s2-card3 .texto {
+  background-color: #FFFFFF;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+}
+
+.trumpet {
+  background-color: #55DFB4;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 300px;
+}
+
+.s2-card3 hr {
+  border: 1px solid #55DFB4;
+  opacity: 1;
+  width: 19vw;
+}
+
+@media (max-width: 576px) {
+  .seccion-2 p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+  .seccion-2 h2 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+  }
+  .s2-card1 {
+    flex-direction: column-reverse;
+    gap: 2vh;
+    padding: 8%;
+    padding-top: 15%;
+  }
+  .texto {
+    padding: 0;
+    margin: 0;
+    align-self: flex-end;
+  }
+  .s2-card2 {
+    flex-direction: column;
+    justify-content: center;
+    padding: 8%;
+  }
+  .card1-imgs .cuadrado {
+    transform: translate(41vw, -10vh);
+    width: 26vw;
+    max-width: 120px;
+    height: auto;
+    z-index: 0;
+    margin-top: 15vw;
+  }
+  .seccion-2 .macbook-image {
+    width: 40vw;
+    max-width: 380px;
+  }
+}
+.seccion-3 {
+  height: auto;
+  padding: 6vh 11vw !important;
+}
+
+.cartas {
+  -moz-column-gap: 4vw;
+       column-gap: 4vw;
+  row-gap: 15vw;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  min-width: 21vw;
+  width: auto;
+  flex-grow: 0.3;
+}
+
+.card h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.875rem;
+  line-height: 70px;
+  margin-bottom: 10%;
+  overflow-wrap: normal;
+}
+
+.card h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #13253B;
+  overflow-wrap: normal;
+  padding-top: 5%;
+}
+
+.card-features {
+  padding-bottom: 10%;
+}
+
+.card p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  overflow-wrap: normal;
+  color: #000000;
+}
+
+.card img {
+  width: 11px;
+  height: 11px;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+.card .checked {
+  border-color: #55DFB4;
+  margin-right: 5px;
+}
+
+.card .not-checked {
+  border-color: #EB476E;
+  margin-right: 5px;
+}
+
+.boton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton button {
+  border-radius: 23px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.813rem;
+  line-height: 18px;
+  min-width: 10.41vw;
+  width: auto;
+  height: auto;
+  min-height: 3.7vh;
+  color: #FFFFFF;
+  position: absolute;
+  top: 1px;
+}
+
+.card-1 h2 {
+  color: #FB3B64;
+}
+
+.card-2 h2 {
+  color: #07ACE6;
+}
+
+.card-3 h2 {
+  color: #55DFB4;
+}
+
+.card-1:hover {
+  box-shadow: 5px 10px 27px #FB3B64;
+  transform: scale(1.1);
+}
+
+.card-2:hover {
+  box-shadow: 5px 10px 27px #07ACE6;
+  transform: scale(1.1);
+}
+
+.card-3:hover {
+  box-shadow: 5px 10px 27px #55DFB4;
+  transform: scale(1.1);
+}
+
+.contacto-data h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 58px;
+  color: #000000;
+}
+
+.contacto-data a {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #A5A5A5;
+}
+
+.contacto-data p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #000000;
+}
+
+.contacto-formulario {
+  min-width: 27vw;
+  max-width: 440px;
+}
+
+.caja-texto {
+  color: #08A6E4;
+  border: 0;
+  border-bottom: 1px solid #95989A;
+}
+
+.etiqueta {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.688rem;
+  line-height: 15px;
+  letter-spacing: 3.28px;
+  color: #08A6E4;
+}
+
+.terminos {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 16px;
+  color: #707070;
+}
+
+form button {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.813rem;
+  line-height: 18px;
+  color: #FFFFFF;
+  background: #08A6E4;
+  border: none;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  border-radius: 35px;
+  width: 13.8vw;
+  height: 3.5vh;
+  min-width: 13.8vw;
+}
+
+footer {
+  background: #F7F7F7;
+  box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+}
+
+.social-media {
+  padding-right: 8vw;
+}
+
+.social-media a {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.social-media a:hover {
+  cursor: pointer;
+  border: 1px solid whitesmoke;
+  background-color: gray;
+}
+
+.twitter {
+  background-color: #55ACEE;
+}
+
+.facebook {
+  background-color: #3B5998;
+}
+
+.oxygen-trademark h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.625rem;
+  line-height: 30px;
+  color: #08A6E4;
+  padding-left: 8vw;
+}
+
+.oxygen-trademark p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.688rem;
+  line-height: 15px;
+  color: #A5A5A5;
+  padding-left: 8vw;
+}
+
+button:hover {
+  scale: 120%;
+  box-shadow: 10px 25px 27px #A5A5A5;
+}/*# sourceMappingURL=styles.css.map */
