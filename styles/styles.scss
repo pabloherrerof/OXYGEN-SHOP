@@ -96,7 +96,15 @@ header h2 {
     .navlink {
         margin-left: 5vw;
         width: 20%;
-        margin-bottom: 1%;
+        margin-bottom: 4%;
+
+        font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+letter-spacing: 3.28px;
+text-transform: uppercase;
+color: #A5A5A5;
     }
 
     .nav-active {
@@ -107,7 +115,7 @@ header h2 {
         height: auto;
         left: 0%;
         padding-bottom: 4vh;
-        padding-top: 40px;
+        padding-top: 20px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
     }
 
@@ -319,9 +327,9 @@ header h2 {
     .card1-imgs .cuadrado {
         position: relative;
         left: -50%;
-        transform: translate(20vw, -4vh);
-        width: 13vw;
-        max-width: 240px;
+        transform: translate(20vw, -6vh);
+        width: 14vw;
+        max-width: 250px;
         height: auto;
         z-index: 0;
         margin-top: 2vw;
@@ -617,15 +625,13 @@ header h2 {
         justify-content: center;
         gap: 4vw;
         margin: auto;
-    
-        
     }
+
     .card-features-list{
         text-align: start;
         display: flex;
         flex-direction: column;
-        justify-content: end;
-        width: vw;
+        justify-content: flex-end;
     
     }
     .card-features{
