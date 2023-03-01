@@ -264,8 +264,8 @@ color: #A5A5A5;
     color: #000000;
     padding-left: 15vw !important;
     padding-right: 15vw !important;
-    padding-top: 16vh;
-    padding-bottom: 20vh;
+    padding-top: 12vh;
+    padding-bottom: 10vh;
 }
 
 #seccion-2 .texto {
@@ -487,7 +487,7 @@ color: #A5A5A5;
 //SECCION 3: PRECIOS
 
 #seccion-3 {
-    padding: 16vh 10vw !important;
+    padding: 16vh 7vw ;
     height: 100vh;
     
 }
@@ -625,7 +625,7 @@ color: #A5A5A5;
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
     #cartas{
         flex-direction: column !important;
     }
