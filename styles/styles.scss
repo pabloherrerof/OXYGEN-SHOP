@@ -1,6 +1,4 @@
-body {
-    background-color: #E5E5E5;
-    text-align: center;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,126 +8,129 @@ body {
 header {
     background-color: #FFFFFF;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
-    height: auto;
+    height: 70px;
     padding-right: 3rem;
     width: 100%;
     padding-left: 3rem;
     position: fixed;
     z-index: 10;
 }
-    //NAV
-   
-    nav h2 {
-        font-family: 'Raleway';
-        color: #08A6E4;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 32px;
+header h2 {
+    font-family: 'Raleway';
+    color: #08A6E4;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    width: 60%;
+ }
+
+    ul{
+        list-style: none;
+        justify-content: space-between;
+        display: flex;
+
+        width: 40%;
     }
 
-    nav a {
+    .navlink a {
+        display: inline;
         font-family: 'Open Sans';
         letter-spacing: 0.205rem;
         font-style: normal;
         color: #A5A5A5;
         text-decoration: none;
         font-size: 0.688rem;
-        width: auto;
-        padding-bottom: 30px;
+        width: 100%;
+        padding-bottom: 22px;
         padding-top: 30px;
-        height: 100%;
+        
     }
 
-    nav a:hover {
+    .navlink a:hover {
         color: black;
         border-bottom: 4px solid #08A6E4;
-        outline-offset: 30px;
         font-weight: bold;
-        top: 17px;
-        width: fit-content;
-
-    }
-
-    nav a:active {
-        color: black;
-        border-bottom: 4px solid coral;
-        outline-offset: 30px;
-        font-weight: bold;
-        top: 17px;
-        width: fit-content;
         
-    }
-    //NAV MOVIL
-    #burguer-menu {
-    display: none;
+
     }
 
-    #burguer-menu button {
-        border: none;
+    .burger {
+        font-size: 1.2em;
+        display: none;
     }
-
-    #burguer-menu button:hover {
-
-        border: none;
-        box-shadow: none;
-    }
-
-    #burguer-menu button:checked {
-
-        border: none;
-        box-shadow: none;
-        color: #07ACE6;
-    }
+    
 
     //AJUSTES PARA VISTA MOVIL
-    @media (max-width: 678px) {
-        #normal-menu {
-        display: none !important;
-    }
-
-    .nav-bar {
-        padding: 4%;
-       
-    }
-
-
-    .nav-item {
-        list-style: none;
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 11px;
-        line-height: 15px;
-        text-align: center;
-        letter-spacing: 3.28px;
-        text-transform: uppercase;
-        color: #A5A5A5;
+    @media (max-width: 830px) {
         
-
-
+    
+    header{
+        padding-right: 5%;
+        padding-left: 5%;
+        justify-content: space-between;
+        width: 100%;;
     }
 
-    #burguer-menu {
-        display: inline !important;
-    }   
+    .burger{
+        display: block;
+       font-size: 25px;
+       color: #08A6E4;
+    }    
 
     
+
+    .nav {
+        margin: 0;
+        
+        background: #FFFFFF; 
+        position: absolute;
+        right: -100%;
+        top: 70px;
+        width: 50%;
+        height: calc(100% - 70px);
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .navlink {
+        margin-left: 5vw;
+        width: 20%;
+        margin-bottom: 1%;
+    }
+
+    .nav-active {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: auto;
+        left: 0%;
+        padding-bottom: 4vh;
+        padding-top: 40px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+    }
+
+    .navlink a:hover{
+        border-bottom: none;
+    }
+
+
 }
 
 
 
 //SECCION 1
-.seccion-1 {
-    padding-top: 15.5vh;
-    padding-left: 0;
-    padding-right: 0;
+#seccion-1 {
+    padding-top: 10vh;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
 
 }
     //SELL MORE
-    .seccion-1 .sell-more h2 {
+    #sell-more h2 {
+        padding-top: 12vh;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
@@ -137,7 +138,7 @@ header {
         line-height: 57px;
     }
 
-    .seccion-1 p {
+    #seccion-1 p {
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 400;
@@ -145,33 +146,52 @@ header {
         line-height: 22px;
         text-align: center;
         color: #000000;
+        padding-top: 2%;
+        padding-left: 8%;
+        padding-right:8%;
     }
 
-    .sell-more button {
+    #sell-more button {
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 700;
         font-size: 1em;
         line-height: 22px;
         width: 27vw;
-        max-width: 440px;
-        min-width: 310px;
+        max-width: 300px;
+        min-width: 200px;
         height: 67px;
         color: #FFFFFF;
         background-color: #08A6E4;
         box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
         border-radius: 40px;
         border: 0;
+        margin-bottom: 8vh;
+        margin-top: 2%;
+    }
+
+    #div-fondo{
+        background-image: url("/img/background.png");
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 100vw;
+        
+
+    }
+    .fondo{
+        height: 100%;
+        width: 100%;
     }
 
     //POPULAR SALES
     
-    .popular-sales {
-        margin-top: 22px;
+    #popular-sales {
+        margin-top: 10vh;
         margin-bottom: 122px;
     }
     
-    .popular-sales h2 {
+    #popular-sales h2 {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
@@ -191,36 +211,37 @@ header {
         width: 200px;
     
     }
+
     
     //AJUSTES PARA VISTA MOVIL
     @media (max-width: 768px) {
 
-        .seccion-1 h2 {
-            padding-top: 15vh;
+        #seccion-1 h2 {
+            
             font-family: 'Raleway';
             font-style: normal;
             font-weight: 400;
             font-size: 35px;
             line-height: 41px;
             color: #000000;
+            padding-top: 15vh;
         }
 
         
 
-        .seccion-1 button {
-        width: 82vw;
+        #sell-more button {
+        width: 50vw;
+        min-width: auto;
+        max-width: auto;
 
-        max-width: 310px;
         }
-        .seccion-1 .fondo{
-            padding-top: 8vh;
-        }
+
     }
 
 
 
 //SECCION 2
-.seccion-2 {
+#seccion-2 {
     background-color: #F7F7F7;
     font-family: 'Open Sans';
     font-style: normal;
@@ -230,13 +251,15 @@ header {
     color: #000000;
     padding-left: 15vw !important;
     padding-right: 15vw !important;
+    padding-top: 16vh;
+    padding-bottom: 20vh;
 }
 
-.seccion-2 .texto {
+#seccion-2 .texto {
     padding: 4%;
 }
 
-.seccion-2 h2 {
+#seccion-2 h2 {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -247,7 +270,7 @@ header {
 
 }
 
-.seccion-2 p {
+#seccion-2 p {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -258,15 +281,16 @@ header {
 }
 
     //CARD 1
-    .s2-card1 {
+    #s2-card1 {
         background: #FFFFFF;
         border: 1px solid #E8E9ED;
         border-radius: 5px;
         min-height: 370px;
+        padding: 8%;
     }
 
 
-    .s2-card1 hr {
+    #s2-card1 hr {
         border: 1px solid #FB3B64;
         opacity: 1;
         width: 19vw;
@@ -278,6 +302,7 @@ header {
         justify-content: center;
         align-items: center;
         padding-top: 20px;
+        
     }
 
 
@@ -293,10 +318,9 @@ header {
 
     .card1-imgs .cuadrado {
         position: relative;
-        z-index: 0;
         left: -50%;
-        transform: translate(22vw, -8vh);
-        width: 12vw;
+        transform: translate(20vw, -4vh);
+        width: 13vw;
         max-width: 240px;
         height: auto;
         z-index: 0;
@@ -306,12 +330,13 @@ header {
 
 
     //CARD 2
-    .s2-card2 {
+    #s2-card2 {
         background: #FFFFFF;
         border: 1px solid #E8E9ED;
         border-radius: 5px;
         min-height: 370px;
         height: auto;
+        padding: 8%;
     }
 
 
@@ -332,7 +357,7 @@ header {
 
     }
 
-    .s2-card2 .circulo img {
+    #s2-card2 .circulo img {
         width: 21vw;
         max-width: 320px;
         height: auto;
@@ -344,28 +369,27 @@ header {
     }
 
 
-    .s2-card2 hr {
+    #s2-card2 hr {
         border: 1px solid #08A6E4;
         opacity: 1;
         width: 19vw;
     }
 
     //CARD 3
-    .s2-card3 {
+    #s2-card3 {
         height: auto;
         min-height: 370px;
-    
-    
     }
     
-    .s2-card3 .texto {
+    #s2-card3 .texto {
         background-color: #FFFFFF;
         border: 1px solid #E8E9ED;
         border-radius: 5px;
+        padding: 8%;
     }
     
     
-    .trumpet {
+    #trumpet {
     
         background-color: #55DFB4;
         border: 1px solid #E8E9ED;
@@ -375,7 +399,7 @@ header {
     
     }
     
-    .s2-card3 hr {
+    #s2-card3 hr {
         border: 1px solid #55DFB4;
         opacity: 1;
         width: 19vw;
@@ -383,12 +407,12 @@ header {
 
     //AJUSTES PARA VISTA MOVIL
 
-    @media (max-width: 576px) {
+    @media (max-width: 768px) {
 
 
 
 
-        .seccion-2 p {
+        #seccion-2 p {
 
             font-family: 'Open Sans';
             font-style: normal;
@@ -398,23 +422,20 @@ header {
             color: #000000;
         }
 
-        .seccion-2 h2 {
+        #seccion-2 h2 {
 
             font-family: 'Raleway';
             font-style: normal;
             font-weight: 400;
             font-size: 30px;
             line-height: 35px;
-
             color: #000000;
         }
 
 
-        .s2-card1 {
+        #s2-card1 {
             flex-direction: column-reverse;
             gap: 2vh;
-            padding: 8%;
-            padding-top: 15%;
         }
 
         .texto {
@@ -423,7 +444,7 @@ header {
             align-self: flex-end;
         }
 
-        .s2-card2 {
+        #s2-card2 {
             flex-direction: column;
             justify-content: center;
             padding: 8%;
@@ -431,16 +452,16 @@ header {
         }
 
         .card1-imgs .cuadrado {
-            transform: translate(41vw, -10vh);
-            width: 26vw;
-            max-width: 120px;
+            transform: translate(41vw, -4vh);
+            width: 22vw;
+            max-width: 200px;
             height: auto;
             z-index: 0;
-            margin-top: 15vw;
+            
             
         }
 
-        .seccion-2 .macbook-image {
+        #seccion-2 .macbook-image {
             width: 40vw;
             max-width: 380px;
         }
@@ -452,25 +473,30 @@ header {
 
 //SECCION 3: PRECIOS
 
-.seccion-3 {
-    height: auto;
-    padding: 6vh 11vw !important;
+#seccion-3 {
+    padding: 16vh 11vw !important;
+    height: 100vh;
+    
 }
 
-.cartas {
-    column-gap: 4vw;
-    row-gap: 15vw;
+#cartas {
+    column-gap: 5vw;
+    row-gap: 8vw;
 }
 
-.card-1,
-.card-2,
-.card-3 {
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
     min-width: 21vw;
     width: auto;
     flex-grow: 0.3;
 
 }
-
 
 .card h2 {
 
@@ -498,6 +524,7 @@ header {
 
 .card-features {
     padding-bottom: 10%;
+    justify-content: center;
 }
 
 .card p {
@@ -534,7 +561,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .boton button {
@@ -544,43 +570,74 @@ header {
     font-weight: 700;
     font-size: 0.813rem;
     line-height: 18px;
-    min-width: 10.41vw;
-    width: auto;
+    min-width: 12vw;
     height: auto;
-    min-height: 3.7vh;
+    min-height: 4.2vh;
     color: #FFFFFF;
     position: absolute;
-    top: 1px;
+    top: -18px;
 }
 
 
-.card-1 h2 {
+#card-1 h2 {
     color: #FB3B64;
 }
 
-.card-2 h2 {
+#card-2 h2 {
     color: #07ACE6;
 }
 
-.card-3 h2 {
+#card-3 h2 {
     color: #55DFB4;
 }
 
-.card-1:hover {
+#card-1:hover {
     box-shadow: 5px 10px 27px #FB3B64;
     transform: scale(1.1);
 }
 
-.card-2:hover {
+#card-2:hover {
     box-shadow: 5px 10px 27px #07ACE6;
     transform: scale(1.1);
 }
 
-.card-3:hover {
+#card-3:hover {
     box-shadow: 5px 10px 27px #55DFB4;
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 1000px) {
+    #cartas{
+        flex-direction: column !important;
+    }
+
+    .card-body{
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: center;
+        gap: 4vw;
+        margin: auto;
+    
+        
+    }
+    .card-features-list{
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: vw;
+    
+    }
+    .card-features{
+        justify-content: flex-start !important;
+    }
+
+    .card-head{
+        width: 30vw;
+    }
+   
+   
+}
 
 
 // SECCION 5: CONTACTO
