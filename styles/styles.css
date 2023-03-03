@@ -28,7 +28,9 @@ ul {
   list-style: none;
   justify-content: space-between;
   display: flex;
-  width: 40%;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
+  width: 60%;
 }
 
 .navlink a {
@@ -188,7 +190,7 @@ ul {
 }
 
 .icons {
-  padding: 6vw 3vw;
+  padding: 8vw 4vw;
 }
 
 .icons .popular-sales-img {
@@ -204,12 +206,30 @@ ul {
     font-size: 35px;
     line-height: 41px;
     color: #000000;
-    padding-top: 15vh;
+    padding-top: vh;
   }
   #sell-more button {
     width: 50vw;
     min-width: auto;
     max-width: auto;
+  }
+  #popular-sales {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+  }
+  .icons {
+    row-gap: 4vh;
+    -moz-column-gap: 10vh;
+         column-gap: 10vh;
+  }
+  #popular-sales h2 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
   }
 }
 #seccion-2 {
@@ -406,6 +426,51 @@ ul {
   height: 100vh;
 }
 
+#pricing-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+}
+
+.currency-button {
+  color: #FFFFFF;
+  background-color: lightgrey;
+  padding: 0.5%;
+  border-radius: 30%;
+  border: gray solid 2px;
+  width: 33px;
+  height: 33px;
+  text-align: center;
+}
+
+.currency-button:hover {
+  scale: 120%;
+  box-shadow: 10px 25px 27px #A5A5A5;
+}
+
+.button-active {
+  padding: 0.5%;
+  border-radius: 30%;
+  border: gray solid 2px;
+  color: gray;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #FFFFFF;
+  transform: scale(1);
+}
+
+.button-active:hover {
+  border: gray solid 2px;
+  box-shadow: none;
+  scale: none;
+  cursor: default;
+}
+
 #cartas {
   -moz-column-gap: 5vw;
        column-gap: 5vw;
@@ -533,6 +598,9 @@ ul {
 }
 
 @media screen and (max-width: 850px) {
+  #seccion-3 {
+    padding: 10vh vw;
+  }
   #cartas {
     flex-direction: column !important;
   }

@@ -35,7 +35,7 @@
     <header class="d-flex align-items-center">
         <!--NAV NORMAL-->
 
-        <h2>OXYGEN Shop</h2>
+        <h2>OXYGENShop</h2>
 
 
         
@@ -58,14 +58,9 @@
         <!--SECCION PRIMERA-->
         <section id="seccion-1">
 
-            <div id="sell-more" class="
-                        justify-content-center 
-                        align-items-center 
-                        text-center
-                        ">
+            <div id="sell-more" class="justify-content-center align-items-center text-center">
                 <h2 class="justify-content-center align-items-center">Sell more!</h2>
-                <p class="justify-content-center align-items-center">Open shop on our platform and increase your
-                    sales</p>
+                <p class="justify-content-center align-items-center">Open shop on our platform and increase your sales</p>
                 <button>Open your shop</button>
             </div>
 
@@ -76,10 +71,10 @@
 
 
             <div id="popular-sales">
-                <h2>The most popular sales platform in country</h2>
+                <h2 class="mx-4">The most popular sales platform in country</h2>
 
 
-                <div class="icons d-flex justify-content-evenly align-content-center mt-5 mx-4  flex-wrap">
+                <div class="icons d-flex justify-content-evenly align-content-center my-5 mx-5 flex-wrap">
                     <img class="popular-sales-img col" src="icons/card1section1.svg" alt="daily-entries img">
                     <img class="popular-sales-img col" src="icons/card2section1.svg" alt="seen-products img">
                     <img class="popular-sales-img col" src="icons/card3section1.svg" alt="added-post img">
@@ -145,15 +140,18 @@
         <!--SECCION PRECIOS-->
         <section id="seccion-3" class=" h-auto">
             <!--TITULO-->
-            <h2 class="text-center"
-                style="font-family:'Raleway' ; font-style: normal ;font-weight: 400;line-height: 42px ;color: #000000; font-size: 2.25rem;">
+            <h2 id="pricing-title" class="text-center">
                 Pricing</h2> <!--PRUEBA DE DECLARACION ESTILOS EN HTML-->
-            <div id="currency-menu" class="justify-content-center align-items-center text-center mt-3">
-                <select class="mb-5">
+            <div id="currency-menu" class=" d-flex justify-content-center column-gap-3 align-items-center text-center mt-3 mb-5">
+                <button id="yen" class="currency-button" ><i class="fa fa-jpy" aria-hidden="true"></i></button>
+                <button id="usd" class="currency-button button-active"><i class="fa fa-usd" aria-hidden="true"></i></button>
+                <button id="eur" class="currency-button" ><i class="fa fa-eur" aria-hidden="true"></i></button>
+               <!--  <select class="mb-5">
                     <option value="USD"> USD</option>
+                    
                     <option value="EUR">EUR</option>
                     <option value="YEN">YEN</option>
-                </select>
+                </select> -->
             </div>
             <!--CARDS-->
             <div id="cartas" class="justify-content-center d-flex flex-row">
@@ -162,7 +160,7 @@
                     <div class="card-body  px-1 py-5">
                         <div class="card-head d-flex flex-column justify-content-center align-items-center">
                             <h3 class="card-subtitle">Basic</h3>
-                            <h2 class="card-title">$0</h2>
+                            <h2 id="basic-price" class="card-title">$0</h2>
                         </div>
 
                         <div class="card-features-list d-flex flex-column justify-content-center">
@@ -204,7 +202,7 @@
                     <div class="card-body px-1 py-5">
                         <div class="card-head d-flex flex-column justify-content-center align-items-center">
                             <h3 class="card-subtitle">Profesional</h3>
-                            <h2 class="card-title">$25</h2>
+                            <h2 id="profesional-price" class="card-title">$25</h2>
                         </div>
                         <div class="card-features-list">
                             <div class="card-features d-flex align-items-center">
@@ -239,7 +237,7 @@
                     <div class="card-body  px-1 py-5">
                         <div class="card-head d-flex flex-column justify-content-center align-items-center">
                             <h3 class="card-subtitle">Premium</h3>
-                            <h2 class="card-title">$60</h2>
+                            <h2 id="premium-price" class="card-title">$60</h2>
                         </div>
 
                         <div class="card-features-list">
