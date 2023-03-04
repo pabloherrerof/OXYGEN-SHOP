@@ -1012,6 +1012,10 @@ max-width: 800px;
     opacity: 0.8;
 }
 
+#modal::backdrop{
+    width: fit-content;
+}
+
 
 
 .input-label{

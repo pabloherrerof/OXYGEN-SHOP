@@ -868,6 +868,11 @@ footer {
   opacity: 0.8;
 }
 
+#modal::backdrop {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .input-label {
   font-family: "Raleway";
   font-style: normal;

@@ -178,26 +178,27 @@ document.getElementById("top-button").addEventListener("click", function () {
 })
 
 //MODAL
-window.localStorage.setItem("modalAlreadyShown", "false");
+window.sessionStorage.setItem("modalAlreadyShown", "false");
+console.log(sessionStorage)
 
 window.addEventListener("scroll", function () {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrolled = (winScroll / height) * 100;
 
-    if (window.localStorage.getItem("modalAlreadyShown") === "false") {
+    if (window.sessionStorage.getItem("modalAlreadyShown") === "false") {
         if (scrolled > 25) {
             document.getElementById("modal").showModal();
-            window.localStorage.setItem("modalAlreadyShown", "true");
+            window.sessionStorage.setItem("modalAlreadyShown", "true");
         }
     }
 })
 
 
 setTimeout(function modalController() {
-    if (window.localStorage.getItem("modalAlreadyShown") === "false") {
+    if (window.sessionStorage.getItem("modalAlreadyShown") === "false") {
         document.getElementById("modal").showModal();
-        window.localStorage.setItem("modalAlreadyShown", "true");
+        window.sessionStorage.setItem("modalAlreadyShown", "true");
     }
 }, 5000);
 
@@ -212,6 +213,14 @@ document.getElementById("modalform-close").addEventListener('click', function(ev
     document.getElementById("modal").close();
     }
 )
+
+window.addEventListener("click", function(event){
+    let elemento = document.getElementById("modal");
+    if(!elemento.contains(event.target)){
+        console.log("hola")
+        elemento.close();
+    }
+})
 
 document.getElementById("modal-post").addEventListener("click", function(event){
         event.preventDefault();
