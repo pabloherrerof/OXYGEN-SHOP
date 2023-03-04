@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="animation.css">
 
     <title>OXYGEN Shop</title>
 
@@ -34,7 +35,7 @@
     <!--HEADER-->
     <header class="d-flex align-items-center">
         <!--NAV NORMAL-->
-
+        
         <h2>OXYGENShop</h2>
 
 
@@ -51,15 +52,26 @@
             <i class="fas fa-bars"></i>
         </div>
 
+       
     </header>
+
+    <div id="bar-container">
+        <div id="bar">
+
+        </div>
+    </div>
+
+    <div>
+
+    </div>
 
     <!--MAIN-->
     <main>
         <!--SECCION PRIMERA-->
         <section id="seccion-1">
 
-            <div id="sell-more" class="justify-content-center align-items-center text-center">
-                <h2 class="justify-content-center align-items-center">Sell more!</h2>
+            <div id="sell-more" class="justify-content-center align-items-center text-center tilt-in-top-1 ">
+                <h2 class="justify-content-center align-items-center ">Sell more!</h2>
                 <p class="justify-content-center align-items-center">Open shop on our platform and increase your sales</p>
                 <button>Open your shop</button>
             </div>
@@ -95,7 +107,7 @@
                     <hr>
                 </div>
 
-                <div class="col card1-imgs d-flex">
+                <div class="col card1-imgs d-flex tilt-in-top-1">
                     <img class="cuadrado p-1" src="icons/Rectangle 5.svg" alt="foto cuadrado">
                     <img class="macbook-image" src="img/macbook.png" alt="foto ordenador">
                 </div>
@@ -104,7 +116,7 @@
             <!--CARTA 2-->
             <div id="s2-card2" class="row d-flex flex-wrap ">
 
-                <div class="card2-imgs col d-flex">
+                <div class="card2-imgs col d-flex tilt-in-top-1">
                     <div class="circulo"><img src="icons/Ellipse 3.svg" alt="foto circulo"></div>
                     <img class="iphone" src="img/iphone.png" alt="foto movil">
                 </div>
@@ -130,13 +142,13 @@
                 </div>
 
                 <div id="trumpet" class="col d-flex justify-content-center align-items-center h-auto">
-                    <img src="img/bg-trumpet.png" alt="foto trumpet">
+                    <img class="tilt-in-top-1" src="img/bg-trumpet.png" alt="foto trumpet">
                 </div>
 
             </div>
         </section>
 
-
+        
         <!--SECCION PRECIOS-->
         <section id="seccion-3" class=" h-auto">
             <!--TITULO-->
@@ -156,7 +168,7 @@
             <!--CARDS-->
             <div id="cartas" class="justify-content-center d-flex flex-row">
                 <!--Carta 1: Basic-->
-                <div id="card-1" class="card h-auto" style="border-color: #FB3B64; border-radius: 18px;">
+                <div id="card-1" class="card h-auto tilt-in-top-1" style="border-color: #FB3B64; border-radius: 18px;">
                     <div class="card-body  px-1 py-5">
                         <div class="card-head d-flex flex-column justify-content-center align-items-center">
                             <h3 class="card-subtitle">Basic</h3>
@@ -198,7 +210,7 @@
 
                 </div>
                 <!--Carta 2: Premium-->
-                <div id="card-2" class="card h-auto" style="border-color: #07ACE6; border-radius: 18px;">
+                <div id="card-2" class="card h-auto tilt-in-top-1" style="border-color: #07ACE6; border-radius: 18px;">
                     <div class="card-body px-1 py-5">
                         <div class="card-head d-flex flex-column justify-content-center align-items-center">
                             <h3 class="card-subtitle">Profesional</h3>
@@ -233,7 +245,7 @@
 
                 </div>
                 <!--Carta 3: Premium-->
-                <div id="card-3" class="card h-auto " style="border-color: #55DFB4; border-radius:18px;">
+                <div id="card-3" class="card h-auto tilt-in-top-1" style="border-color: #55DFB4; border-radius:18px;">
                     <div class="card-body  px-1 py-5">
                         <div class="card-head d-flex flex-column justify-content-center align-items-center">
                             <h3 class="card-subtitle">Premium</h3>
@@ -330,10 +342,11 @@
                         <input class="caja-texto" id="name" type="text">
                         <label class="etiqueta" for="email">EMAIL</label>
                         <input class="caja-texto" id="email" type="text">
+                        
 
                         <div class="terminos d-flex align-items-baseline gap-3">
                             <input type="checkbox" name="chbx" id="chbx">
-                            <label for="chbx">I hereby give consent for my personal data included in my application to
+                            <label id="chbx-terminos" for="chbx">I hereby give consent for my personal data included in my application to
                                 be
                                 processed for the purposes of the recruitment process under the European Parliament’s
                                 and
@@ -352,12 +365,48 @@
 
     </main>
 
+    <!--TOP BUTTON-->
+    <div id="top-button-div" class="w-100 d-flex justify-content-center">
+        <button id="top-button"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+    
+    
+    <!--MODAL-->
+    <dialog id="modal" class="d-flex flex-column row-gap-3">
+        <button id="modalform-close" ><i class="fa-solid fa-x"></i></button>
+        <h2 id="modal-title" class="text-center">SUBSCRIBE TO OUR NEWSLETTER!</h2>
+        <form action="#" id="modal-form" class=" d-flex flex-column pb-lg-4 row-gap-2" method="dialog">
+            <label class="input-text" for="title">Nombre</label>
+            <input class="caja-texto" type="text" name="" id="modalName" placeholder="Introduce tu nombre.">
+            <label class="input-text" for="autor">Email</label>
+            <input class="caja-texto" type="email" name="autor" id="modalEmail" placeholder="Introduce tu email.">
+            <div class="terminos">
+                <input type="checkbox" name="chbx" id="modal-chbx">
+                <label id="modal-terminos" class="chbx-terminos" for="modal-chbx">I accept the <a>Terms and Conditions</a></label>
+            </div>
+            
+
+            <div class="pt-3 d-flex justify-content-center flex-column row-gap-2">
+                <button id="modal-post" class="modalform-button mx-auto my-1" type="submit" >Añadir</button>
+                <button class="modalform-button mx-auto my-1" type="reset">Borrar</button>
+            </div>
+          
+        </form>
+    </dialog>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          new TypeIt("#modal-title", {
+          }).go();
+        });
+      </script>
+
     <!--FOOTER-->
     <footer class="mt-5 d-flex flex-row gap-2  align-items-center justify-content-between">
         <!--OXYGEN LOGO Y COPYRIGHT-->
         <div class="ms-2 oxygen-trademark">
             <h2>Oxygen Shop</h2>
             <p>© 2022 OXYGEN, All Rights Reserved</p>
+            
         </div>
         <!--SOCIAL MEDIA LINKS-->
         <div class="d-flex flex-row gap-4 social-media justify-content-center align-items-center">
@@ -367,10 +416,14 @@
 
             <a class="facebook d-flex justify-content-center align-items-center" href="https://www.facebook.com"><img
                     src="icons/Facebook.svg" alt="icono facebook"></a>
-        </div>
+        </div> 
     </footer>
 
+
+
+
     <script src="script.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script> <!--TypeIt-->
 </body>
 
 </html>
