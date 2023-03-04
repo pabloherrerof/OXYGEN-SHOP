@@ -161,11 +161,11 @@ window.addEventListener("scroll", function () {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrolled = (winScroll / height) * 100;
-    if (scrolled > 50) {
+    if (scrolled > 75) {
         document.getElementById("top-button").style.visibility = "visible";
     }
 
-    if (scrolled < 50) {
+    if (scrolled < 75) {
         document.getElementById("top-button").style.visibility = "hidden";
     }
 })
@@ -257,6 +257,4 @@ function modalFormValidator(nombre, email, checkbox) {
 
 
 //Type it prueba
-const modalTitle = document.getElementById("modal-title");
-      
-new TypeIt(modalTitle).go()
+

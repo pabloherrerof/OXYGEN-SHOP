@@ -367,20 +367,30 @@
 
     <!--TOP BUTTON-->
     <div id="top-button-div" class="w-100 d-flex justify-content-center">
-        <button id="top-button"><i class="fa-solid fa-arrow-up"></i></button>
+
+            <button id="top-button"><i class="fa-solid fa-arrow-up"></i></button>
+        
     </div>
     
     
     <!--MODAL-->
     <dialog id="modal" class="d-flex flex-column row-gap-3">
-        <button id="modalform-close" ><i class="fa-solid fa-x"></i></button>
+        <div class="text-end">
+            <button id="modalform-close" ><i class="fa-solid fa-x"></i></button>
+        </div>
+
         <h2 id="modal-title" class="text-center">SUBSCRIBE TO OUR NEWSLETTER!</h2>
-        <form action="#" id="modal-form" class=" d-flex flex-column pb-lg-4 row-gap-2" method="dialog">
-            <label class="input-text" for="title">Nombre</label>
-            <input class="caja-texto" type="text" name="" id="modalName" placeholder="Introduce tu nombre.">
-            <label class="input-text" for="autor">Email</label>
-            <input class="caja-texto" type="email" name="autor" id="modalEmail" placeholder="Introduce tu email.">
-            <div class="terminos">
+
+        <form action="#" id="modal-form" class=" d-flex flex-column pb-lg-4 row-gap-2  w-100 justify-content-center" method="dialog">
+            <div class=" w-75 row-gap-4 pt-4 pb-1 d-flex flex-column justify-content-center text-center m-auto">
+                <label class="input-label text-start" for="title">NOMBRE</label>
+                <input class="caja-texto input" type="text" name="" id="modalName" placeholder="Introduce tu nombre.">
+                <label class="input-label text-start" for="autor">EMAIL</label>
+                <input class="caja-texto input" type="email" name="autor" id="modalEmail" placeholder="Introduce tu email.">
+            </div>
+           
+            
+            <div class="terminos text-center w-100">
                 <input type="checkbox" name="chbx" id="modal-chbx">
                 <label id="modal-terminos" class="chbx-terminos" for="modal-chbx">I accept the <a>Terms and Conditions</a></label>
             </div>
