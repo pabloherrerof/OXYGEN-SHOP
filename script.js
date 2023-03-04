@@ -96,6 +96,7 @@ document.getElementById("form-button").addEventListener("click", function (event
         nombre.classList.remove("error-form");
         email.classList.remove("error-form");
         document.getElementById("chbx-terminos").classList.remove("error-form-text");
+        document.getElementById("form-button").innerHTML="<i class='fa-solid fa-check'></i>";
 
         postForm(nombre.value, email.value, checkbox.checked);
     }
@@ -225,6 +226,9 @@ document.getElementById("modal-post").addEventListener("click", function(event){
             nombre.classList.remove("error-form");
             email.classList.remove("error-form");
             document.getElementById("modal-terminos").classList.remove("error-form-text");
+            document.getElementById("modal-post").innerHTML="<i class='fa-solid fa-check'></i>";
+           
+
     
             postForm(nombre.value, email.value, checkbox.checked);
         }
