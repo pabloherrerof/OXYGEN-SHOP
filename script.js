@@ -98,6 +98,10 @@ document.getElementById("form-button").addEventListener("click", function (event
         document.getElementById("chbx-terminos").classList.remove("error-form-text");
         document.getElementById("form-button").innerHTML="<i class='fa-solid fa-check'></i>";
 
+        setTimeout(function(){
+            document.getElementById("form-button").innerHTML="Send";
+        },3000)
+
         postForm(nombre.value, email.value, checkbox.checked);
     }
 })
@@ -217,7 +221,6 @@ document.getElementById("modalform-close").addEventListener('click', function(ev
 window.addEventListener("click", function(event){
     let elemento = document.getElementById("modal");
     if(!elemento.contains(event.target)){
-        console.log("hola")
         elemento.close();
     }
 })
@@ -236,6 +239,10 @@ document.getElementById("modal-post").addEventListener("click", function(event){
             email.classList.remove("error-form");
             document.getElementById("modal-terminos").classList.remove("error-form-text");
             document.getElementById("modal-post").innerHTML="<i class='fa-solid fa-check'></i>";
+
+            setTimeout(function(){
+                document.getElementById("modal-post").innerHTML="Subscribe";
+            },3000)
            
 
     
