@@ -103,8 +103,13 @@ document.getElementById("form-button").addEventListener("click", function (event
         },3000)
 
         postForm(nombre.value, email.value, checkbox.checked);
-    }
-})
+    }else {
+        document.getElementById("form-button").innerHTML="<i class='fa-solid fa-x'></i>";
+
+        setTimeout(function(){
+            document.getElementById("form-button").innerHTML="Subscribe";
+        },3000)
+}})
 
 function formValidator(nombre, email, checkbox) {
     let validator = true;
@@ -247,6 +252,12 @@ document.getElementById("modal-post").addEventListener("click", function(event){
 
     
             postForm(nombre.value, email.value, checkbox.checked);
+        } else {
+            document.getElementById("modal-post").innerHTML="<i class='fa-solid fa-x'></i>";
+
+            setTimeout(function(){
+                document.getElementById("modal-post").innerHTML="Subscribe";
+            },3000)
         }
 
 
@@ -276,5 +287,4 @@ function modalFormValidator(nombre, email, checkbox) {
 }
 
 
-//Type it prueba
 
