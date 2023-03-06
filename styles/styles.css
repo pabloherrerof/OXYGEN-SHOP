@@ -775,7 +775,7 @@ footer {
 
 #top-button-div {
   position: fixed;
-  bottom: 10px;
+  bottom: 50px;
   height: 50px;
 }
 
@@ -789,8 +789,8 @@ footer {
   background-color: #FFFFFF;
   font-size: 2rem;
   visibility: hidden;
-  margin: auto;
-  left: 50%;
+  margin-right: 5%;
+  left: 30%;
 }
 
 #top-button i {
