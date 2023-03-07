@@ -864,7 +864,6 @@ footer {
 
 .modalform-button:hover {
   scale: 120%;
-  box-shadow: 8px 25px 50px #00ffe9;
   opacity: 0.8;
 }
 
@@ -908,5 +907,5 @@ footer {
 }
 
 .correct-button {
-  background: greenyellow !important;
+  background: #00b347 !important;
 }/*# sourceMappingURL=styles.css.map */
