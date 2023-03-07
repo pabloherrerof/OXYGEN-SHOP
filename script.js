@@ -97,17 +97,28 @@ document.getElementById("form-button").addEventListener("click", function (event
         email.classList.remove("error-form");
         document.getElementById("chbx-terminos").classList.remove("error-form-text");
         document.getElementById("form-button").innerHTML="<i class='fa-solid fa-check'></i>";
+        document.getElementById("form-button").classList.add("correct-button");
+        document.getElementById("form-button").classList.add("jello-vertical");
+
+        
+       
+
 
         setTimeout(function(){
             document.getElementById("form-button").innerHTML="Send";
+            document.getElementById("form-button").classList.remove("jello-vertical");
         },3000)
 
         postForm(nombre.value, email.value, checkbox.checked);
     }else {
         document.getElementById("form-button").innerHTML="<i class='fa-solid fa-x'></i>";
+        document.getElementById("form-button").classList.add("bounce-top");
+        document.getElementById("form-button").classList.add("error-button")
 
         setTimeout(function(){
             document.getElementById("form-button").innerHTML="Subscribe";
+            document.getElementById("form-button").classList.remove("bounce-top");
+            document.getElementById("form-button").classList.remove("error-button")
         },3000)
 }})
 
@@ -118,6 +129,8 @@ function formValidator(nombre, email, checkbox) {
         document.getElementById("name").placeholder = "Nombre incorrecto (2-100 caracteres)";
         document.getElementById("name").classList.add("error-form");
         document.getElementById("name").value = "";
+        
+       
 
     }
 
@@ -126,11 +139,16 @@ function formValidator(nombre, email, checkbox) {
         document.getElementById("email").placeholder = "Email incorrecto";
         document.getElementById("email").classList.add("error-form");
         document.getElementById("email").value = "";
+      
+    
     }
 
     if (checkbox === false) {
         validator = false;
         document.getElementById("chbx-terminos").classList.add("error-form-text");
+      
+
+
     }
     return validator;
 }
@@ -244,9 +262,13 @@ document.getElementById("modal-post").addEventListener("click", function(event){
             email.classList.remove("error-form");
             document.getElementById("modal-terminos").classList.remove("error-form-text");
             document.getElementById("modal-post").innerHTML="<i class='fa-solid fa-check'></i>";
+            document.getElementById("modal-post").classList.add("correct-button");
+            document.getElementById("modal-post").classList.add("jello-vertical");
 
             setTimeout(function(){
                 document.getElementById("modal-post").innerHTML="Subscribe";
+                document.getElementById("modal-post").classList.remove("correct-button");
+                document.getElementById("modal-post").classList.remove("jello-vertical");
             },3000)
            
 
@@ -254,9 +276,13 @@ document.getElementById("modal-post").addEventListener("click", function(event){
             postForm(nombre.value, email.value, checkbox.checked);
         } else {
             document.getElementById("modal-post").innerHTML="<i class='fa-solid fa-x'></i>";
+            document.getElementById("modal-post").classList.add("bounce-top");
+        document.getElementById("modal-post").classList.add("error-button")
 
             setTimeout(function(){
                 document.getElementById("modal-post").innerHTML="Subscribe";
+                document.getElementById("modal-post").classList.remove("bounce-top");
+        document.getElementById("modal-post").classList.remove("error-button")
             },3000)
         }
 

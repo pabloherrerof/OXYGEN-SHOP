@@ -901,4 +901,12 @@ footer {
   line-height: 15px;
   color: #A5A5A5;
   padding-left: 8vw;
+}
+
+.error-button {
+  background: red !important;
+}
+
+.correct-button {
+  background: greenyellow !important;
 }/*# sourceMappingURL=styles.css.map */
