@@ -1,7 +1,7 @@
 
 //BURGUER MENU
 const burger = document.querySelector('.burger i');
-const nav = document.querySelector('.nav');
+const nav = document.querySelector('.navb');
 
 
 function toggleNav() {
