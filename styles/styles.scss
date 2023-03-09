@@ -9,9 +9,9 @@ header {
     background-color: #FFFFFF;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
     height: 70px;
-    padding-right: 2vw;
+    padding-right: 6vw;
     width: 100%;
-    padding-left: 2vw;
+    padding-left: 6vw;
     position: fixed;
     z-index: 10;
     display: flex;
@@ -36,6 +36,7 @@ ul {
     display: flex;
     column-gap: 3vw;
     padding: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .navlink a {
@@ -47,6 +48,11 @@ ul {
     font-size: 0.688rem;
     
 
+}
+.navlink a{
+    height: 70px;
+    display: flex;
+    align-items: center;
 }
 
 .navlink a:hover {
@@ -106,8 +112,6 @@ background: linear-gradient(90deg, rgba(9,89,121,1) 35%, rgba(0,255,233,1) 100%)
         right: 100%;
         width: 100vw;
         top: 70px;
-        flex-direction: column;
-        justify-content: space-around;
     }
     #nav-items{
         flex-direction: column;
@@ -118,7 +122,7 @@ background: linear-gradient(90deg, rgba(9,89,121,1) 35%, rgba(0,255,233,1) 100%)
 
     .navlink {
         margin-left: 5vw;
-        margin-bottom: 4%;
+        margin-bottom: 14px;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 700;
@@ -126,6 +130,11 @@ background: linear-gradient(90deg, rgba(9,89,121,1) 35%, rgba(0,255,233,1) 100%)
         letter-spacing: 3.28px;
         text-transform: uppercase;
         color: #A5A5A5;
+        
+    }
+
+    .navlink a{
+        height:30px !important
     }
 
     .nav-active {
@@ -133,8 +142,8 @@ background: linear-gradient(90deg, rgba(9,89,121,1) 35%, rgba(0,255,233,1) 100%)
         width: 100vw;
         height: auto;
         left: 0%;
-        padding-bottom: 2vh;
-        padding-top: 20px;
+        padding-bottom: 1vh;
+        padding-top: 15px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
     }
   
@@ -292,14 +301,6 @@ background: linear-gradient(90deg, rgba(9,89,121,1) 35%, rgba(0,255,233,1) 100%)
         padding-top: vh;
     }
 
-
-
-    #sell-more button {
-        width: 50vw;
-        min-width: auto;
-        max-width: auto;
-
-    }
 
     #popular-sales {
         margin-top: 6vh;
@@ -837,7 +838,6 @@ height: 100% !important;
     color: black;
     border: 0;
     border-bottom: 1px solid #95989A;
-    border-radius: 12px;
     padding: 1%
 
 }
@@ -888,7 +888,7 @@ height: 100% !important;
 }
 
 .error-form{
-    border: 2px solid red;
+    border-bottom: 2px solid red;
 }
 
 .error-form-text{
@@ -926,6 +926,26 @@ footer {
 
 .facebook {
     background-color: #3B5998;
+}
+//OXYGEN BRAND AND COPYRIGHT
+.oxygen-trademark h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.625rem;
+    line-height: 30px;
+    color: #08A6E4;
+    padding-left: 8vw;
+}
+
+.oxygen-trademark p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.688rem;
+    line-height: 15px;
+    color: #A5A5A5;
+    padding-left: 8vw;
 }
 
 //TOP BUTTON
@@ -1041,27 +1061,8 @@ max-width: 800px;
 }
 
 
-//OXYGEN BRAND AND COPYRIGHT
-.oxygen-trademark h2 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.625rem;
-    line-height: 30px;
-    color: #08A6E4;
-    padding-left: 8vw;
-}
 
-.oxygen-trademark p {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.688rem;
-    line-height: 15px;
-    color: #A5A5A5;
-    padding-left: 8vw;
-}
-
+//ERROR AND CORRECT BUTTON CLASS
 .error-button{
     background: red !important;
 }
